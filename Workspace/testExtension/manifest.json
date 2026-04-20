@@ -1,0 +1,111 @@
+{
+    "name": "testExtension",
+    "fantasyName": "testExtension",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.0",
+    "description": "product view discription",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/testExtension.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/testExtension/Configuration/testExtension.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/testExtension/Sass/_testextension-testextension.scss",
+            "myaccount": "Modules/testExtension/Sass/_testextension-testextension.scss",
+            "checkout": "Modules/testExtension/Sass/_testextension-testextension.scss"
+        },
+        "files": [
+            "Modules/testExtension/Sass/_testextension-testextension.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
+            "myaccount": "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
+            "checkout": "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
+                    "Modules/testExtension/JavaScript/testExtension.View.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js",
+                    "Modules/testExtension/JavaScript/productDetailsFull.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
+                    "Modules/testExtension/JavaScript/testExtension.View.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js",
+                    "Modules/testExtension/JavaScript/productDetailsFull.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
+                    "Modules/testExtension/JavaScript/testExtension.View.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js",
+                    "Modules/testExtension/JavaScript/productDetailsFull.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/testExtension/SuiteScript/JJ.testExtension.testExtension.js",
+        "files": [
+            "Modules/testExtension/SuiteScript/JJ.testExtension.testExtension.js",
+            "Modules/testExtension/SuiteScript/testExtension.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/testExtension/SuiteScript2/testExtension.Service.ss"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ContactFormModule.config": {
+            "group": "extensions",
+            "subtab": "ContactFormModule_subtab",
+            "type": "string",
+            "title": "ContactFormModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

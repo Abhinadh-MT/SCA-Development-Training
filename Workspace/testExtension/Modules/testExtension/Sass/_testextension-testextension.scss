@@ -1,0 +1,46 @@
+// /*
+// 	Sass Application Entry Point
+// 	Link all your sass dependencies in the right order
+
+// 	Example:
+// 	@import "other-sass-file.scss";
+// 	@import "../../<other module>/Sass/other-sass-file.scss";
+// */ 
+
+
+.testextension-info-card {
+  @extend .info-card;
+
+  &__content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+  }
+
+ 
+ .close {
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 50%;          // fully rounded (circle)
+    background-color: $sc-color-secondary;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: darken($sc-color-secondary, 10%);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+
+
+
+}

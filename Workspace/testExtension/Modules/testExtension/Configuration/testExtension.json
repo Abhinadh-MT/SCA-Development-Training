@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "subtab": {
+    "id": "deliverydate",
+    "group": "extension",
+    "title": "Delivery Expected"
+  },
+  "properties": {
+    "deliverydateMessage": {
+      "group": "extensions",
+      "subtab": "deliverydate",
+      "type": "string",
+      "title": "Expected delivery",
+      "description": "Specify the expected delivery date",
+      "default": "Expected delivery data 3–6 days"
+    }
+  }
+}

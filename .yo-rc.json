@@ -1,0 +1,21 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "testExtension": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "contactInfoExtenion": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "contactForm": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}

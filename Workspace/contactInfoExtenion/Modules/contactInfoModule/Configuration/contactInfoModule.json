@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "contactInfoModule.config": {
+            "group": "extensions",
+            "subtab": "contactInfoModule_subtab",
+            "type": "string",
+            "title": "contactInfoModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

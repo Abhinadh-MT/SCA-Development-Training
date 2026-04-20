@@ -1,0 +1,110 @@
+{
+    "name": "contactInfoExtenion",
+    "fantasyName": "contactinfo",
+    "vendor": "JJ",
+    "version": "1.0.1",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "contact form",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/contactInfoExtenion.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/contactInfoModule/Configuration/contactInfoModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/contactInfoModule/Sass/_contactinfoextenion-contactinfomodule.scss",
+            "myaccount": "Modules/contactInfoModule/Sass/_contactinfoextenion-contactinfomodule.scss",
+            "checkout": "Modules/contactInfoModule/Sass/_contactinfoextenion-contactinfomodule.scss"
+        },
+        "files": [
+            "Modules/contactInfoModule/Sass/_contactinfoextenion-contactinfomodule.scss",
+            "Modules/contactInfoModule/Sass/contact_form.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/contactInfoModule/Templates/jj_contactinfoextenion_contactinfomodule.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/contactInfoModule/Templates/jj_contactinfoextenion_contactinfomodule.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/contactInfoModule/Templates/jj_contactinfoextenion_contactinfomodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.js",
+            "myaccount": "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.js",
+            "checkout": "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.js",
+                    "Modules/contactInfoModule/JavaScript/contactInfoModule.View.js",
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.Model.js",
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.SS2Model.js",
+                    "Modules/contactInfoModule/JavaScript/contactInfoModule.Router.js",
+                    "Modules/contactInfoModule/SuiteScript/contactInfoModule.Model.js",
+                    "Modules/contactInfoModule/SuiteScript/contactInfoModule.ServiceController.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.js",
+                    "Modules/contactInfoModule/JavaScript/contactInfoModule.View.js",
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.Model.js",
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.SS2Model.js",
+                    "Modules/contactInfoModule/JavaScript/contactInfoModule.Router.js",
+                    "Modules/contactInfoModule/SuiteScript/contactInfoModule.Model.js",
+                    "Modules/contactInfoModule/SuiteScript/contactInfoModule.ServiceController.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.js",
+                    "Modules/contactInfoModule/JavaScript/contactInfoModule.View.js",
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.Model.js",
+                    "Modules/contactInfoModule/JavaScript/JJ.contactInfoExtenion.contactInfoModule.SS2Model.js",
+                    "Modules/contactInfoModule/JavaScript/contactInfoModule.Router.js",
+                    "Modules/contactInfoModule/SuiteScript/contactInfoModule.Model.js",
+                    "Modules/contactInfoModule/SuiteScript/contactInfoModule.ServiceController.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\contactInfoExtenion",
+    "suitescript2": {
+        "files": [
+            "Modules/contactInfoModule/SuiteScript2/contactInfoModule.Service.ss"
+        ]
+    }
+}

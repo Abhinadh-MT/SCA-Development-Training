@@ -1,0 +1,110 @@
+{
+    "name": "contactForm",
+    "fantasyName": "ContactForm",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "adding contact information",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ContactFormModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ContactFormModule/Configuration/ContactFormModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ContactFormModule/Sass/_contactform-contactformmodule.scss",
+            "myaccount": "Modules/ContactFormModule/Sass/_contactform-contactformmodule.scss",
+            "checkout": "Modules/ContactFormModule/Sass/_contactform-contactformmodule.scss"
+        },
+        "files": [
+            "Modules/ContactFormModule/Sass/_contactform-contactformmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ContactFormModule/Templates/jj_contactform_contactformmodule.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ContactFormModule/Templates/jj_contactform_contactformmodule.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ContactFormModule/Templates/jj_contactform_contactformmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
+            "myaccount": "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
+            "checkout": "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
+                    "Modules/ContactFormModule/JavaScript/ContactFormModule.View.js",
+                    "Modules/ContactFormModule/JavaScript/contactFormModule.Router.js",
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.Model.js",
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
+                    "Modules/ContactFormModule/JavaScript/ContactFormModule.View.js",
+                    "Modules/ContactFormModule/JavaScript/contactFormModule.Router.js",
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.Model.js",
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
+                    "Modules/ContactFormModule/JavaScript/ContactFormModule.View.js",
+                    "Modules/ContactFormModule/JavaScript/contactFormModule.Router.js",
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.Model.js",
+                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ContactFormModule/SuiteScript/JJ.contactForm.ContactFormModule.js",
+        "files": [
+            "Modules/ContactFormModule/SuiteScript/JJ.contactForm.ContactFormModule.js",
+            "Modules/ContactFormModule/SuiteScript/ContactFormModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\contactForm",
+    "suitescript2": {
+        "files": [
+            "Modules/ContactFormModule/SuiteScript2/ContactFormModule.Service.ss"
+        ]
+    }
+}
