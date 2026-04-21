@@ -1,4 +1,4 @@
-{{!-- Edited for Horizon Theme --}}
+{{!-- Edited for Horizon Theme - Extension Override --}}
 
 <div class="product-details-full">
 	<div data-cms-area="item_details_banner" data-cms-area-filters="page_type"></div>
@@ -62,13 +62,37 @@
 								</div>
 								<div class="product-details-full-actions-container">
 									<div data-view="ProductDetails.AddToQuote" class="product-details-full-actions-addtoquote"></div>
-
                                     <div data-view="AddToProductList" class="product-details-full-actions-addtowishlist"></div>
 								</div>
 
 							</section>
 						{{/if}}
-                       
+
+<!-- START OF CUSTOM DELIVERY SECTION (FROM EXTENSION) -->
+{{#if showDeliverySection}}
+  <section class="testextension-delivery">
+      <h4 class="testextension-delivery__title">Custom Delivery Details</h4>
+      
+      <!-- Custom Fields Displayed from getContext -->
+      <p class="testextension-delivery__info">Expected Delivery: <strong>{{custitem_expected_delivery}}</strong></p>
+      <p class="testextension-delivery__note">Special Note: <em>{{custcol_special_note}}</em></p>
+      
+      <!-- Input triggering "change" and "blur" events -->
+      <div class="testextension-delivery__form-group">
+        <label class="testextension-delivery__label">Delivery Note Instructions:</label>
+        <input type="text" class="testextension-delivery__input" data-action="update-delivery-note" placeholder="Enter note (min 5 characters)"/>
+      </div>
+      
+      <!-- Button triggering "click" event -->
+      {{#if showWarrantyInfo}}
+         <button class="testextension-delivery__button" data-action="show-warranty-info">
+            View Warranty Info
+         </button>
+      {{/if}}
+  </section>
+{{/if}}
+<!-- END OF CUSTOM DELIVERY SECTION -->
+
 						<div data-view="StockDescription"></div>
 
 						<div data-view="SocialSharing.Flyout" class="product-details-full-social-sharing"></div>
@@ -109,29 +133,3 @@
 		<div id="banner-details-bottom" class="content-banner banner-details-bottom" data-cms-area="item_details_banner_bottom" data-cms-area-filters="page_type"></div>
 	</article>
 </div>
-
-
-
-{{!----
-Use the following context variables when customizing this template:
-
-	model (Object)
-	model.item (Object)
-	model.item.internalid (Number)
-	model.item.type (String)
-	model.quantity (Number)
-	model.options (Array)
-	model.options.0 (Object)
-	model.options.0.cartOptionId (String)
-	model.options.0.itemOptionId (String)
-	model.options.0.label (String)
-	model.options.0.type (String)
-	model.location (String)
-	model.fulfillmentChoice (String)
-	pageHeader (String)
-	itemUrl (String)
-	isItemProperlyConfigured (Boolean)
-	isPriceEnabled (Boolean)
-
-----}}
-

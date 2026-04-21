@@ -33,19 +33,22 @@
             "shopping": {
                 "files": [
                     "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
+                    "Modules/testExtension/Templates/jj_product_details_full.tpl"
                 ]
             },
             "myaccount": {
                 "files": [
                     "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
+                    "Modules/testExtension/Templates/jj_product_details_full.tpl"
                 ]
             },
             "checkout": {
                 "files": [
                     "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
+                    "Modules/testExtension/Templates/jj_product_details_full.tpl"
                 ]
             }
         }
