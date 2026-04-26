@@ -31,6 +31,7 @@
         "extensions_path": [
             "Workspace/contactForm",
             "Workspace/contactInfoExtenion",
+            "Workspace/MyWishList",
             "Workspace/testExtension"
         ],
         "theme_path": "Workspace/Extras/Horizon",

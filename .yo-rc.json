@@ -15,6 +15,26 @@
         "shopping",
         "myaccount",
         "checkout"
+      ],
+      "wishList": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "customWishList": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "WishListTask": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "MyWishList": [
+        "shopping",
+        "myaccount",
+        "checkout"
       ]
     }
   }
