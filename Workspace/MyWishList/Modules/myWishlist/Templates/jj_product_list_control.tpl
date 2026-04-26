@@ -43,18 +43,3 @@
 	<div class="product-list-control-new-product-list-container" data-type="new-item-container"></div>
 </div>
 
-
-
-
-{{!----
-Use the following context variables when customizing this template:
-
-	isMoving (Boolean)
-	showControl (Boolean)
-	isEmpty (Boolean)
-	hasOneProductList (Boolean)
-	hasProductLists (Boolean)
-	productListLength (Number)
-
-----}}
-

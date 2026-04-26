@@ -2,14 +2,15 @@
     "name": "testExtension",
     "fantasyName": "testExtension",
     "vendor": "JJ",
+    "version": "1.0.0",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": "",
         "SCS": ""
     },
-    "version": "1.0.0",
     "description": "product view discription",
+    "skins": [],
     "assets": {
         "img": {
             "files": []
@@ -26,6 +27,16 @@
     "configuration": {
         "files": [
             "Modules/testExtension/Configuration/testExtension.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/testExtension/Sass/_testextension-testextension.scss",
+            "myaccount": "Modules/testExtension/Sass/_testextension-testextension.scss",
+            "checkout": "Modules/testExtension/Sass/_testextension-testextension.scss"
+        },
+        "files": [
+            "Modules/testExtension/Sass/_testextension-testextension.scss"
         ]
     },
     "templates": {
@@ -52,16 +63,6 @@
                 ]
             }
         }
-    },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/testExtension/Sass/_testextension-testextension.scss",
-            "myaccount": "Modules/testExtension/Sass/_testextension-testextension.scss",
-            "checkout": "Modules/testExtension/Sass/_testextension-testextension.scss"
-        },
-        "files": [
-            "Modules/testExtension/Sass/_testextension-testextension.scss"
-        ]
     },
     "javascript": {
         "entry_points": {
@@ -106,6 +107,7 @@
             "Modules/testExtension/SuiteScript/testExtension.ServiceController.js"
         ]
     },
+    "local_folder": "Workspace\\testExtension",
     "suitescript2": {
         "files": [
             "Modules/testExtension/SuiteScript2/testExtension.Service.ss"
