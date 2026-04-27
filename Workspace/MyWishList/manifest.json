@@ -2,17 +2,28 @@
     "name": "MyWishList",
     "fantasyName": "NewWishList",
     "vendor": "JJ",
+    "version": "1.0.0",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": "",
         "SCS": ""
     },
-    "version": "1.0.0",
     "description": "My cool extension does magic!",
+    "skins": [],
     "configuration": {
         "files": [
             "Modules/myWishlist/Configuration/myWishlist.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss",
+            "myaccount": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss",
+            "checkout": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss"
+        },
+        "files": [
+            "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss"
         ]
     },
     "templates": {
@@ -36,16 +47,6 @@
                 ]
             }
         }
-    },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss",
-            "myaccount": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss",
-            "checkout": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss"
-        },
-        "files": [
-            "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss"
-        ]
     },
     "javascript": {
         "entry_points": {
@@ -79,5 +80,6 @@
                 ]
             }
         }
-    }
+    },
+    "local_folder": "Workspace\\MyWishList"
 }

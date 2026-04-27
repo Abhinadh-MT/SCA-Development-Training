@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "SalesRepInfo.config": {
+            "group": "extensions",
+            "subtab": "SalesRepInfo_subtab",
+            "type": "string",
+            "title": "SalesRepInfo_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -35,6 +35,11 @@
         "shopping",
         "myaccount",
         "checkout"
+      ],
+      "salesRepInfo": [
+        "shopping",
+        "myaccount",
+        "checkout"
       ]
     }
   }
