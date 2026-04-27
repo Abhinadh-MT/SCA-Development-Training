@@ -7,7 +7,6 @@ define('JJ.testExtension.testExtension', [
 
     return {
         mountToApp: function (container) {
-            // Loading the override method
             ProductDetailsFullViewExtension.loadExtension();
         }
     };
