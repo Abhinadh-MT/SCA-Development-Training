@@ -213,9 +213,7 @@ define('JJ.MyWishList.myWishlist.View', [
     });
 },
 
-        // -------------------------
-        // TOAST (optional)
-        // -------------------------
+
         showToast: function (message) {
 
             jQuery('.wishlist-toast').remove();
