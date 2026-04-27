@@ -37,7 +37,7 @@ define('JJ.MyWishList.myWishlist.View', [
 
             if (!internalid) return;
 
-        
+
             this.itemModel = new ItemModel({
                 internalid: internalid,
                 quantity: 1
@@ -47,9 +47,9 @@ define('JJ.MyWishList.myWishlist.View', [
                 item: this.itemModel.attributes
             });
 
-              this.itemModel.set('options', this.model.get('options'));
+            this.itemModel.set('options', this.model.get('options'));
 
-        
+
             this.productModel = new ProductModel({
                 item: this.itemModel.attributes
             });
@@ -60,7 +60,7 @@ define('JJ.MyWishList.myWishlist.View', [
             }
 
             try {
-                if (this.productModel.get('options') && this.productModel.get('options').length > 1) {
+                if (this.productModel.get('options') && this.productModel.get('options').length > 0) {
                     this.productModel.get('options').filter(function (option) {
                         var values = option.get('values');
                         if (values && values.length) {
@@ -71,14 +71,14 @@ define('JJ.MyWishList.myWishlist.View', [
                     });
                 }
             } catch (error) {
-                
+
             }
 
             this.productModel.set('quantity', 1);
             this.productModel.set('_maximumQuantity', 3);
             this.productModel.set('_minimumQuantity', 1);
 
-        
+
             var productListModule = this.application.ProductListModule;
 
             if (productListModule && productListModule.Utils) {
@@ -104,7 +104,7 @@ define('JJ.MyWishList.myWishlist.View', [
 
                                 }
                             });
-                    
+
                             items.on('add', function (addedItem) {
                                 var addedId = String(
                                     addedItem.get('item').internalid || addedItem.get('item').id
@@ -138,16 +138,16 @@ define('JJ.MyWishList.myWishlist.View', [
             }
         },
 
-    
+
         toggleWishlist: function (e) {
 
             e.preventDefault();
             e.stopPropagation();
-              if (this.inWishlist) {
-        this.removeFromWishlist();
-        return;
-    }
-           this.isWishlistCreated = !this.inWishlist;
+            if (this.inWishlist) {
+                this.removeFromWishlist();
+                return;
+            }
+            this.isWishlistCreated = !this.inWishlist;
             this.showMenu = !this.showMenu;
             this.render();
 
@@ -158,9 +158,9 @@ define('JJ.MyWishList.myWishlist.View', [
                 setTimeout(function () {
 
                     var $btn = self.$('.product-list-control-button-wishlist');
-              
+
                     if ($btn.length) {
-                        $btn.click(); 
+                        $btn.click();
                     }
 
                 }, 200);
@@ -168,52 +168,51 @@ define('JJ.MyWishList.myWishlist.View', [
         },
         removeFromWishlist: function () {
 
-    var self = this;
+            var self = this;
 
-    var productListModule = this.application.ProductListModule;
+            var productListModule = this.application.ProductListModule;
 
-    if (!productListModule || !productListModule.Utils) return;
+            if (!productListModule || !productListModule.Utils) return;
 
-    productListModule.Utils.getProductListsPromise().done(function (lists) {
+            productListModule.Utils.getProductListsPromise().done(function (lists) {
 
-        lists.each(function (list) {
+                lists.each(function (list) {
 
-            var items = list.get('items');
+                    var items = list.get('items');
 
-            if (items && items.length) {
+                    if (items && items.length) {
 
-                var itemToRemove = null;
+                        var itemToRemove = null;
 
-                items.each(function (item) {
+                        items.each(function (item) {
 
-                    var wishlistId = String(
-                        item.get('item').internalid || item.get('item').id
-                    );
+                            var wishlistId = String(
+                                item.get('item').internalid || item.get('item').id
+                            );
 
-                    var currentId = String(self.model.get('internalid') || self.model.id);
+                            var currentId = String(self.model.get('internalid') || self.model.id);
 
-                    if (wishlistId === currentId) {
-                        itemToRemove = item;
+                            if (wishlistId === currentId) {
+                                itemToRemove = item;
+                            }
+                        });
+
+                        if (itemToRemove) {
+
+                            itemToRemove.destroy().done(function () {
+
+                                self.inWishlist = false;
+                                self.render();
+
+                                self.showToast('Removed from Wishlist');
+                            });
+                        }
                     }
                 });
+            });
+        },
 
-                if (itemToRemove) {
-
-                    // ⭐ REMOVE ITEM
-                    itemToRemove.destroy().done(function () {
-
-                        self.inWishlist = false;
-                        self.render();
-
-                        self.showToast('Removed from Wishlist');
-                    });
-                }
-            }
-        });
-    });
-},
-
-
+   
         showToast: function (message) {
 
             jQuery('.wishlist-toast').remove();

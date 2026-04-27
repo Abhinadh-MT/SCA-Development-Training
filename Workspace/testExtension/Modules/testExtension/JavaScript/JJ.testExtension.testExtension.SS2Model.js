@@ -1,6 +1,3 @@
-// Model.js
-// -----------------------
-// @module Case
 define("JJ.testExtension.testExtension.SS2Model", ["Backbone", "Utils"], function(
     Backbone,
     Utils
