@@ -11,24 +11,6 @@
     },
     "description": "product view discription",
     "skins": [],
-    "assets": {
-        "img": {
-            "files": []
-        },
-        "fonts": {
-            "files": []
-        },
-        "services": {
-            "files": [
-                "services/testExtension.Service.ss"
-            ]
-        }
-    },
-    "configuration": {
-        "files": [
-            "Modules/testExtension/Configuration/testExtension.json"
-        ]
-    },
     "sass": {
         "entry_points": {
             "shopping": "Modules/testExtension/Sass/_testextension-testextension.scss",
@@ -43,22 +25,16 @@
         "application": {
             "shopping": {
                 "files": [
-                    "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
                     "Modules/testExtension/Templates/jj_product_details_full.tpl"
                 ]
             },
             "myaccount": {
                 "files": [
-                    "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
                     "Modules/testExtension/Templates/jj_product_details_full.tpl"
                 ]
             },
             "checkout": {
                 "files": [
-                    "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
                     "Modules/testExtension/Templates/jj_product_details_full.tpl"
                 ]
             }
@@ -75,8 +51,6 @@
                 "files": [
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
                     "Modules/testExtension/JavaScript/testExtension.View.js",
-                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
-                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js",
                     "Modules/testExtension/JavaScript/productDetailsFull.View.js"
                 ]
             },
@@ -84,8 +58,6 @@
                 "files": [
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
                     "Modules/testExtension/JavaScript/testExtension.View.js",
-                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
-                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js",
                     "Modules/testExtension/JavaScript/productDetailsFull.View.js"
                 ]
             },
@@ -93,24 +65,12 @@
                 "files": [
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
                     "Modules/testExtension/JavaScript/testExtension.View.js",
-                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
-                    "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js",
                     "Modules/testExtension/JavaScript/productDetailsFull.View.js"
                 ]
             }
         }
     },
-    "ssp-libraries": {
-        "entry_point": "Modules/testExtension/SuiteScript/JJ.testExtension.testExtension.js",
-        "files": [
-            "Modules/testExtension/SuiteScript/JJ.testExtension.testExtension.js",
-            "Modules/testExtension/SuiteScript/testExtension.ServiceController.js"
-        ]
-    },
-    "local_folder": "Workspace\\testExtension",
-    "suitescript2": {
-        "files": [
-            "Modules/testExtension/SuiteScript2/testExtension.Service.ss"
-        ]
-    }
+
+    "local_folder": "Workspace\\testExtension"
+
 }

@@ -70,7 +70,7 @@ define("ContactFormModule.View", [
               console.log("if this error funcation", error.responseText);
               var res = JSON.parse(error.responseText);
               message = res.message || message;
-            } catch (e) {}
+            } catch (e) { }
           }
 
           alert(message);

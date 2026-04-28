@@ -11,24 +11,6 @@
     },
     "description": "adding contact information",
     "skins": [],
-    "assets": {
-        "img": {
-            "files": []
-        },
-        "fonts": {
-            "files": []
-        },
-        "services": {
-            "files": [
-                "services/ContactFormModule.Service.ss"
-            ]
-        }
-    },
-    "configuration": {
-        "files": [
-            "Modules/ContactFormModule/Configuration/ContactFormModule.json"
-        ]
-    },
     "sass": {
         "entry_points": {
             "shopping": "Modules/ContactFormModule/Sass/_contactform-contactformmodule.scss",
@@ -94,13 +76,7 @@
             }
         }
     },
-    "ssp-libraries": {
-        "entry_point": "Modules/ContactFormModule/SuiteScript/JJ.contactForm.ContactFormModule.js",
-        "files": [
-            "Modules/ContactFormModule/SuiteScript/JJ.contactForm.ContactFormModule.js",
-            "Modules/ContactFormModule/SuiteScript/ContactFormModule.ServiceController.js"
-        ]
-    },
+  
     "local_folder": "Workspace\\contactForm",
     "suitescript2": {
         "files": [

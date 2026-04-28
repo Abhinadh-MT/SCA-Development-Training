@@ -1,7 +1,7 @@
 // Model.js
 // -----------------------
 // @module Case
-define("JJ.salesRepInfo.SalesRepInfo.Model", ["Backbone", "Utils"], function(
+define("JJ.SalesPerson.SalesPerson.SS2Model", ["Backbone", "Utils"], function(
     Backbone,
     Utils
 ) {
@@ -9,14 +9,12 @@ define("JJ.salesRepInfo.SalesRepInfo.Model", ["Backbone", "Utils"], function(
 
     // @class Case.Fields.Model @extends Backbone.Model
     return Backbone.Model.extend({
-
-        
         //@property {String} urlRoot
         urlRoot: Utils.getAbsoluteUrl(
             getExtensionAssetsPath(
-                "services/SalesRepInfo.Service.ss"
-            )
+                "Modules/SalesPerson/SuiteScript2/SalesPerson.Service.ss"
+            ),
+            true
         )
-        
-});
+    });
 });

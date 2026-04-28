@@ -32,7 +32,7 @@
             "Workspace/contactForm",
             "Workspace/contactInfoExtenion",
             "Workspace/MyWishList",
-            "Workspace/salesRepInfo",
+            "Workspace/SalesPerson",
             "Workspace/testExtension"
         ],
         "theme_path": "Workspace/Extras/Horizon",
