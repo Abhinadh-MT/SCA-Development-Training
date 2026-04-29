@@ -11,11 +11,6 @@
     },
     "description": "My cool extension does magic!",
     "skins": [],
-    "configuration": {
-        "files": [
-            "Modules/myWishlist/Configuration/myWishlist.json"
-        ]
-    },
     "sass": {
         "entry_points": {
             "shopping": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss",
@@ -30,20 +25,17 @@
         "application": {
             "shopping": {
                 "files": [
-                    "Modules/myWishlist/Templates/jj_mywishlist_mywishlist.tpl",
-                    "Modules/myWishlist/Templates/jj_product_list_control.tpl"
+                    "Modules/myWishlist/Templates/jj_mywishlist_mywishlist.tpl"
                 ]
             },
             "myaccount": {
                 "files": [
-                    "Modules/myWishlist/Templates/jj_mywishlist_mywishlist.tpl",
-                    "Modules/myWishlist/Templates/jj_product_list_control.tpl"
+                    "Modules/myWishlist/Templates/jj_mywishlist_mywishlist.tpl"
                 ]
             },
             "checkout": {
                 "files": [
-                    "Modules/myWishlist/Templates/jj_mywishlist_mywishlist.tpl",
-                    "Modules/myWishlist/Templates/jj_product_list_control.tpl"
+                    "Modules/myWishlist/Templates/jj_mywishlist_mywishlist.tpl"
                 ]
             }
         }
@@ -59,24 +51,24 @@
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
                     "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js"
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
                 ]
             },
             "myaccount": {
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
                     "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js"
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
                 ]
             },
             "checkout": {
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
                     "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js"
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
                 ]
             }
         }
