@@ -2,25 +2,14 @@
     "name": "SalesPerson",
     "fantasyName": "salePerson",
     "vendor": "JJ",
-    "version": "1.0.0",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": "",
         "SCS": ""
     },
+    "version": "1.0.0",
     "description": "My cool extension does magic!",
-    "skins": [],
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/SalesPerson/Sass/_salesperson-salesperson.scss",
-            "myaccount": "Modules/SalesPerson/Sass/_salesperson-salesperson.scss",
-            "checkout": "Modules/SalesPerson/Sass/_salesperson-salesperson.scss"
-        },
-        "files": [
-            "Modules/SalesPerson/Sass/_salesperson-salesperson.scss"
-        ]
-    },
     "templates": {
         "application": {
             "shopping": {
@@ -40,6 +29,16 @@
             }
         }
     },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/SalesPerson/Sass/_salesperson-salesperson.scss",
+            "myaccount": "Modules/SalesPerson/Sass/_salesperson-salesperson.scss",
+            "checkout": "Modules/SalesPerson/Sass/_salesperson-salesperson.scss"
+        },
+        "files": [
+            "Modules/SalesPerson/Sass/_salesperson-salesperson.scss"
+        ]
+    },
     "javascript": {
         "entry_points": {
             "shopping": "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.js",
@@ -52,7 +51,6 @@
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.js",
                     "Modules/SalesPerson/JavaScript/SalesPerson.View.js",
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.SS2Model.js"
-                  
                 ]
             },
             "myaccount": {
@@ -60,7 +58,6 @@
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.js",
                     "Modules/SalesPerson/JavaScript/SalesPerson.View.js",
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.SS2Model.js"
-          
                 ]
             },
             "checkout": {
@@ -68,12 +65,10 @@
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.js",
                     "Modules/SalesPerson/JavaScript/SalesPerson.View.js",
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.SS2Model.js"
-    
                 ]
             }
         }
     },
-    "local_folder": "Workspace\\SalesPerson",
     "suitescript2": {
         "files": [
             "Modules/SalesPerson/SuiteScript2/SalesPerson.Service.ss"
