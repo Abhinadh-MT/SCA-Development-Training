@@ -11,16 +11,6 @@
     },
     "description": "My cool extension does magic!",
     "skins": [],
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss",
-            "myaccount": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss",
-            "checkout": "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss"
-        },
-        "files": [
-            "Modules/myWishlist/Sass/_mywishlist-mywishlist.scss"
-        ]
-    },
     "templates": {
         "application": {
             "shopping": {
