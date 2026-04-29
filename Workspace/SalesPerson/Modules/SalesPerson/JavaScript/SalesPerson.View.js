@@ -23,12 +23,18 @@ define('JJ.SalesPerson.SalesPerson.View'
 
 				this.model.fetch().done(function () {
 					self.isLoading = false;
-					self.render();
+					self.render(); // Final render with data
 				}).fail(function (e) {
 					self.isLoading = false;
 					console.error("SalesPerson fetch failed", e);
 					self.render();
 				});
+			}
+			, render: function() {
+				if (this.isLoading) {
+					return this; 
+				}
+				return Backbone.View.prototype.render.apply(this, arguments);
 			}
 
 			, getContext: function getContext() {
