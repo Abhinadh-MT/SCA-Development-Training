@@ -2,12 +2,10 @@
 define('JJ.SalesPerson.SalesPerson.View'
 	, [
 		'jj_salesperson_salesperson.tpl'
-		, 'JJ.SalesPerson.SalesPerson.SS2Model'
 		, 'Backbone'
 	]
 	, function (
 		jj_salesperson_salesperson_tpl
-		, SalesPersonSS2Model
 		, Backbone
 	) {
 		'use strict';
@@ -17,31 +15,13 @@ define('JJ.SalesPerson.SalesPerson.View'
 			template: jj_salesperson_salesperson_tpl
 
 			, initialize: function (options) {
-				this.model = new SalesPersonSS2Model();
-				var self = this;
-				this.isLoading = true;
-
-				this.model.fetch().done(function () {
-					self.isLoading = false;
-					self.render(); // Final render with data
-				}).fail(function (e) {
-					self.isLoading = false;
-					console.error("SalesPerson fetch failed", e);
-					self.render();
-				});
-			}
-			, render: function() {
-				if (this.isLoading) {
-					return this; 
-				}
-				return Backbone.View.prototype.render.apply(this, arguments);
+				// Receive the model that was already fetched in the EntryPoint
+				this.model = options.model;
 			}
 
 			, getContext: function getContext() {
 				return {
-					isLoading: this.isLoading,
-					showRepresentative: this.model.get('assigned') && !this.isLoading,
-					
+					showRepresentative: this.model && this.model.get('assigned'),
 					name: this.model.get('name'),
 					title: this.model.get('title'),
 					comments: this.model.get('comments'),
