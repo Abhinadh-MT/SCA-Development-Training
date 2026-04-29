@@ -11,11 +11,6 @@
     },
     "description": "My cool extension does magic!",
     "skins": [],
-    "configuration": {
-        "files": [
-            "Modules/SalesPerson/Configuration/SalesPerson.json"
-        ]
-    },
     "sass": {
         "entry_points": {
             "shopping": "Modules/SalesPerson/Sass/_salesperson-salesperson.scss",
@@ -57,6 +52,7 @@
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.js",
                     "Modules/SalesPerson/JavaScript/SalesPerson.View.js",
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.SS2Model.js"
+                  
                 ]
             },
             "myaccount": {
@@ -64,6 +60,7 @@
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.js",
                     "Modules/SalesPerson/JavaScript/SalesPerson.View.js",
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.SS2Model.js"
+          
                 ]
             },
             "checkout": {
@@ -71,6 +68,7 @@
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.js",
                     "Modules/SalesPerson/JavaScript/SalesPerson.View.js",
                     "Modules/SalesPerson/JavaScript/JJ.SalesPerson.SalesPerson.SS2Model.js"
+    
                 ]
             }
         }

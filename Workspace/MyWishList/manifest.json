@@ -51,21 +51,24 @@
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
                     "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js"
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
                 ]
             },
             "myaccount": {
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
                     "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js"
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
                 ]
             },
             "checkout": {
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
                     "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js"
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
+                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
                 ]
             }
         }

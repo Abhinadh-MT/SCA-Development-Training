@@ -52,7 +52,6 @@
                     "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
                     "Modules/ContactFormModule/JavaScript/ContactFormModule.View.js",
                     "Modules/ContactFormModule/JavaScript/contactFormModule.Router.js",
-                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.Model.js",
                     "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.SS2Model.js"
                 ]
             },
@@ -61,7 +60,6 @@
                     "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
                     "Modules/ContactFormModule/JavaScript/ContactFormModule.View.js",
                     "Modules/ContactFormModule/JavaScript/contactFormModule.Router.js",
-                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.Model.js",
                     "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.SS2Model.js"
                 ]
             },
@@ -70,13 +68,11 @@
                     "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.js",
                     "Modules/ContactFormModule/JavaScript/ContactFormModule.View.js",
                     "Modules/ContactFormModule/JavaScript/contactFormModule.Router.js",
-                    "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.Model.js",
                     "Modules/ContactFormModule/JavaScript/JJ.contactForm.ContactFormModule.SS2Model.js"
                 ]
             }
         }
     },
-  
     "local_folder": "Workspace\\contactForm",
     "suitescript2": {
         "files": [
