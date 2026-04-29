@@ -80,14 +80,11 @@
                 margin: 0 0 5px 0;
                 font-size: 13px;
                 color: #333;
-                display: flex; // Ensure labels and values line up
-                align-items: center;
 
                 strong {
                     display: inline-block;
-                    width: 85px; // Fixed alignment: enough for "LinkedIn:"
+                    margin-right: 5px; // Small natural gap
                     color: #444;
-                    flex-shrink: 0;
                 }
 
                 a {
