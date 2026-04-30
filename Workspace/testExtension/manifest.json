@@ -27,21 +27,24 @@
                 "files": [
                     "Modules/testExtension/Templates/jj_product_details_full.tpl",
                     "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
+                    "Modules/testExtension/Templates/jj_cart_lines.tpl"
                 ]
             },
             "myaccount": {
                 "files": [
                     "Modules/testExtension/Templates/jj_product_details_full.tpl",
                     "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
+                    "Modules/testExtension/Templates/jj_cart_lines.tpl"
                 ]
             },
             "checkout": {
                 "files": [
                     "Modules/testExtension/Templates/jj_product_details_full.tpl",
                     "Modules/testExtension/Templates/jj_testextension_testextension.tpl",
-                    "Modules/testExtension/Templates/testExtension_delivery.tpl"
+                    "Modules/testExtension/Templates/testExtension_delivery.tpl",
+                    "Modules/testExtension/Templates/jj_cart_lines.tpl"
                 ]
             }
         }
@@ -58,6 +61,7 @@
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
                     "Modules/testExtension/JavaScript/testExtension.View.js",
                     "Modules/testExtension/JavaScript/productDetailsFull.View.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.CartLines.View.js",
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js"
                 ]
@@ -67,6 +71,7 @@
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
                     "Modules/testExtension/JavaScript/testExtension.View.js",
                     "Modules/testExtension/JavaScript/productDetailsFull.View.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.CartLines.View.js",
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js"
                 ]
@@ -76,6 +81,7 @@
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.js",
                     "Modules/testExtension/JavaScript/testExtension.View.js",
                     "Modules/testExtension/JavaScript/productDetailsFull.View.js",
+                    "Modules/testExtension/JavaScript/JJ.testExtension.CartLines.View.js",
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.Model.js",
                     "Modules/testExtension/JavaScript/JJ.testExtension.testExtension.SS2Model.js"
                 ]
