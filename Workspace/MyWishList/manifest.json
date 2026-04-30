@@ -40,25 +40,19 @@
             "shopping": {
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
-                    "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
+                    "Modules/myWishlist/JavaScript/myWishlist.View.js"
                 ]
             },
             "myaccount": {
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
-                    "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
+                    "Modules/myWishlist/JavaScript/myWishlist.View.js"
                 ]
             },
             "checkout": {
                 "files": [
                     "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.js",
-                    "Modules/myWishlist/JavaScript/myWishlist.View.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.SS2Model.js",
-                    "Modules/myWishlist/JavaScript/JJ.MyWishList.myWishlist.Model.js"
+                    "Modules/myWishlist/JavaScript/myWishlist.View.js"
                 ]
             }
         }

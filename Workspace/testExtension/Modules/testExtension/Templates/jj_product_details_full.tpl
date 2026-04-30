@@ -68,19 +68,26 @@
 							</section>
 						{{/if}}
 
-<!-- START OF CUSTOM DELIVERY SECTION (FROM EXTENSION) -->
+<!-- HIDE THE NATIVE NETSUITE OPTION -->
+<style>
+  [data-id="custcol_jj_delivery_note"], 
+  #custcol_jj_delivery_note-container,
+  .product-details-full-options-container [data-cart-option-id="custcol_jj_delivery_note"] {
+      display: none !important;
+  }
+</style>
+
 {{#if showDeliverySection}}
   <section class="testextension-delivery">
       <h4 class="testextension-delivery__title">Custom Delivery Details</h4>
       
-      <!-- Custom Fields Displayed from getContext -->
       <p class="testextension-delivery__info">Expected Delivery: <strong>{{custitem_expected_delivery}}</strong></p>
       <p class="testextension-delivery__note">Special Note: <em>{{custcol_special_note}}</em></p>
       
       <!-- Input triggering "change" and "blur" events -->
       <div class="testextension-delivery__form-group">
         <label class="testextension-delivery__label">Delivery Note Instructions:</label>
-        <input type="text" class="testextension-delivery__input" data-action="update-delivery-note" placeholder="Enter note (min 5 characters)"/>
+        <input type="text" class="testextension-delivery__input" data-action="update-delivery-note" placeholder="Enter note (min 5 characters)" value="{{custcol_jj_delivery_note}}"/>
       </div>
       
       <!-- Button triggering "click" event -->

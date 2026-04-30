@@ -1,41 +1,34 @@
-define(
-	'JJ.SalesPerson.SalesPerson'
-,   [
-		'JJ.SalesPerson.SalesPerson.View'
+define('JJ.SalesPerson.SalesPerson'
+	, [
+		'JJ.SalesPerson.SalesPerson.View',
+		'JJ.SalesPerson.SalesPerson.SS2Model'
 	]
-,   function (
-		SalesPersonView
-	)
-{
-	'use strict';
+	, function (
+		SalesPersonView,
+		SalesPersonModel
+	) {
+		'use strict';
 
-	return  {
-		mountToApp: function mountToApp (container)
-		{
-			console.log('SalesPerson Extension Loading...');
-			
-			// Using Layout component as it is available across all application contexts
-			var layout = container.getComponent('Layout');
-			
-			if (layout)
-			{
-				console.log('Layout Component found. Mounting views...');
+		return {
+			mountToApp: function (container) {
+				var layout = container.getComponent('Layout');
+				var model = new SalesPersonModel();
 
-				// Mount to Account Overview Banner
-				layout.addChildView('Overview.Banner', function() { 
-					return new SalesPersonView({ container: container });
-				});
+				if (layout) {
+					
+					model.fetch().done(function () {
+						if (model.get('assigned')) {
+							
+							layout.addChildView('Overview.Banner', function () {
+								return new SalesPersonView({ model: model });
+							});
 
-				// Mount to Recent Purchases (Order History) page Banner
-				layout.addChildView('OrderHistory.List.Banner', function() { 
-					return new SalesPersonView({ container: container });
-				});
+							layout.addChildView('OrderHistory.List.Banner', function () {
+								return new SalesPersonView({ model: model });
+							});
+						}
+					});
+				}
 			}
-			else {
-				console.error('SalesPerson Error: Layout component not found.');
-			}
-		}
-	};
-});
-
-
+		};
+	});

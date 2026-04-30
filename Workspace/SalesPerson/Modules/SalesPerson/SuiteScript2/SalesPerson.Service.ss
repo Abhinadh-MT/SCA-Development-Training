@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope Public
  */
-define(['N/runtime', 'N/search', 'N/log'], function (runtime, search, log) {
+define(['N/runtime', 'N/search', 'N/log','N/file'], function (runtime, search, log,file) {
     "use strict";
     return {
         service: function (ctx) {
