@@ -21,7 +21,7 @@
 				{{#if hasOneProductList}}
 					{{translate 'list'}})
 				{{else}}
-					{{translate 'lists'}}
+					{{translate 'lists'}})
 				{{/if}}
 			{{/if}}:
 		{{else}}

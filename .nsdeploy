@@ -1,7 +1,7 @@
 {
     "credentials": {
         "user_agent": "sc-extension-devtools/2025.1.0",
-        "authID": "test3",
+        "authID": "newtoken",
         "hostname": "TD3079995.restlets.api.netsuite.com",
         "website": "3",
         "domain": "scomm031026jj.nstraining1.com",
