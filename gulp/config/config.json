@@ -31,6 +31,7 @@
         "extensions_path": [
             "Workspace/contactForm",
             "Workspace/contactInfoExtenion",
+            "Workspace/Footer",
             "Workspace/MyWishList",
             "Workspace/SalesPerson",
             "Workspace/testExtension"
@@ -93,13 +94,13 @@
         "webapp_id": "13018",
         "ssp_folder": "13018",
         "is_scis": false,
-        "key": "06680492a5485a96321394c13299b71d6b3e61b62492dc4ff1196f7bf7145df0",
-        "secret": "73505ad31a44244c5984e43cc9fe2321e2d163824f6b625316450595ef3e6e52",
-        "account": "TD3079995",
         "target_folder": {
             "parentId": "-15",
             "folderName": "Deploy_Extensions"
-        }
+        },
+        "key": "06680492a5485a96321394c13299b71d6b3e61b62492dc4ff1196f7bf7145df0",
+        "secret": "73505ad31a44244c5984e43cc9fe2321e2d163824f6b625316450595ef3e6e52",
+        "account": "TD3079995"
     },
     "nsdeployPath": ".nsdeploy"
 }

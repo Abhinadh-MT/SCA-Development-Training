@@ -113,7 +113,7 @@ define([
 
       ctx.response.write(JSON.stringify({
         success: false,
-        message: e.message || 'Contacts can only be created for Company customers, not Individuals.', 
+        message: e.message || 'Contacts can be added only for company accounts.', 
       }));
     }
         }}       

@@ -2,6 +2,12 @@
  
   <h2>{{pageHeader}}</h2>
  
+  {{#if globalErrorMessage}}
+    <div class="alert alert-danger">
+      {{globalErrorMessage}}
+    </div>
+  {{/if}}
+
   {{#if successMessage}}
     <div class="alert alert-success">
       Contact form submitted successfully!

@@ -40,6 +40,11 @@
         "shopping",
         "myaccount",
         "checkout"
+      ],
+      "Footer": [
+        "shopping",
+        "myaccount",
+        "checkout"
       ]
     }
   }

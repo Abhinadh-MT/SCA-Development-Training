@@ -78,7 +78,15 @@ define("ContactFormModule.View", [
             alert("Contact created successfully");
             self.clearForm();
           } else {
-            alert(response.message);
+            // Display server-side errors inline
+            if (response.message.indexOf('email') !== -1) {
+              self.formErrors.email = response.message;
+            } else if (response.message.indexOf('name') !== -1) {
+              self.formErrors.firstname = response.message;
+            } else {
+              self.globalErrorMessage = response.message;
+            }
+            self.render();
           }
         })
         .fail(function (error) {
@@ -89,7 +97,9 @@ define("ContactFormModule.View", [
               message = res.message || message;
             } catch (e) {}
           }
-          alert(message);
+          
+          self.globalErrorMessage = message;
+          self.render();
         });
     },
 
@@ -129,6 +139,7 @@ define("ContactFormModule.View", [
       this.$("input").val("");
       this.formData = {};
       this.formErrors = {};
+      this.globalErrorMessage = false;
       this.successMessage = false;
       this.render();
     },
@@ -137,7 +148,8 @@ define("ContactFormModule.View", [
       return {
         pageHeader: "Contact Form",
         errors: this.formErrors,
-        formData: this.formData, // Pass data back to template
+        globalErrorMessage: this.globalErrorMessage,
+        formData: this.formData,
         successMessage: this.successMessage,
       };
     },

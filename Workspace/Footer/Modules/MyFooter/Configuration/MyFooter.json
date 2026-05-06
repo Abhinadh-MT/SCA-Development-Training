@@ -1,0 +1,162 @@
+{
+    "type": "object",
+    "group": {
+        "id": "jjfooterconfig",
+        "title": "Footer Extension",
+        "description": "Custom Footer Configuration"
+    },
+    "subtab": {
+        "id": "jjfootersettings",
+        "title": "Settings",
+        "group": "jjfooterconfig"
+    },
+    "properties": {
+        "footer.showlegacynewsletter": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "boolean",
+            "title": "Show Legacy Newsletter",
+            "description": "Show Legacy Newsletter in Footer",
+            "default": true
+        },
+        "footer.title": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Upper Section Title",
+            "default": "Newsletter Sign Up"
+        },
+        "footer.newslettertext": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Newsletter Sub-text",
+            "default": "Sign up to get new and exclusive offers to your inbox!"
+        },
+        "footer.newsletterbutton": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Newsletter Button Label",
+            "default": "Subscribe"
+        },
+        "footer.copyright.hide": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "boolean",
+            "title": "Hide Copyright",
+            "default": false
+        },
+        "footer.copyright.companyname": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Company Name",
+            "default": "Balaji Trading, Inc."
+        },
+        "footer.copyright.phonenum": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Phone Number",
+            "default": "909-444-7999"
+        },
+        "footer.copyright.emailid": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Email Address",
+            "default": "info@balajiwireless.com"
+        },
+        "footer.copyright.storename": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Store Name",
+            "default": "BALAJI"
+        },
+        "footer.copyright.address": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Address",
+            "default": "NASHVILLE DISTRIBUTION CENTER, 5301 Centre Pointe Dr, La Vergne, IN 37086"
+        },
+        "footer.copyright.initialyear": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Initial Year",
+            "default": "2024"
+        },
+        "footer.sociallinkstitle": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Social Media Links Title",
+            "default": "SOCIAL"
+        },
+        "footer.sociallinks": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "array",
+            "title": "Social Media Links",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "icon": {
+                        "type": "string",
+                        "title": "Icon Name (e.g. facebook, twitter, instagram, youtube)"
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "URL"
+                    }
+                }
+            }
+        },
+        "footer.multicolllinks": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "array",
+            "title": "Multi-column Links",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text"
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL"
+                    },
+                    "datatouchpoint": {
+                        "type": "string",
+                        "title": "Data-Touchpoint"
+                    },
+                    "datahashtag": {
+                        "type": "string",
+                        "title": "Data-Hashtag"
+                    },
+                    "datatarget": {
+                        "type": "string",
+                        "title": "Data-Target"
+                    },
+                    "column": {
+                        "type": "string",
+                        "title": "Column",
+                        "enum": ["Column 1", "Column 2", "Column 3", "Column 4"]
+                    }
+                }
+            }
+        },
+        "footer.lowersectiontext": {
+            "group": "jjfooterconfig",
+            "subtab": "jjfootersettings",
+            "type": "string",
+            "title": "Lower Section Text Area",
+            "default": "© 2024 Balaji Trading, Inc. All Rights Reserved."
+        }
+    }
+}
