@@ -1,0 +1,78 @@
+{
+    "name": "Footer",
+    "fantasyName": "Footer",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.0",
+    "description": "Footer design changed",
+  
+    "configuration": {
+        "files": [
+            "Modules/MyFooter/Configuration/MyFooter.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MyFooter/Templates/jj_footer_myfooter.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MyFooter/Templates/jj_footer_myfooter.tpl"
+         
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MyFooter/Templates/jj_footer_myfooter.tpl"
+
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/MyFooter/Sass/_footer-myfooter.scss",
+            "myaccount": "Modules/MyFooter/Sass/_footer-myfooter.scss",
+            "checkout": "Modules/MyFooter/Sass/_footer-myfooter.scss"
+        },
+        "files": [
+            "Modules/MyFooter/Sass/_footer-myfooter.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/MyFooter/JavaScript/JJ.Footer.MyFooter.js",
+            "myaccount": "Modules/MyFooter/JavaScript/JJ.Footer.MyFooter.js",
+            "checkout": "Modules/MyFooter/JavaScript/JJ.Footer.MyFooter.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MyFooter/JavaScript/JJ.Footer.MyFooter.js",
+                    "Modules/MyFooter/JavaScript/MyFooter.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MyFooter/JavaScript/JJ.Footer.MyFooter.js",
+                    "Modules/MyFooter/JavaScript/MyFooter.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MyFooter/JavaScript/JJ.Footer.MyFooter.js",
+                    "Modules/MyFooter/JavaScript/MyFooter.View.js"
+            
+                ]
+            }
+        }
+    }
+}

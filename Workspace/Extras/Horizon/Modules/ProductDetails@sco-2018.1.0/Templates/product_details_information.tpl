@@ -7,12 +7,9 @@
 				<p class="product-details-information-hint"> {{{trimHtml content 150}}} </p>
 			</button>
 		{{/each}}
-         <div class="product-info-delivery">
-    <strong>Expected Delivery:</strong>
-    <span>{{expectedDelivery}}</span>
-</div>
+
 		<div class="product-details-information-content-container">
-	       
+
 			<div id="banner-content-top" class="content-banner banner-content-top"></div>
 
 			<div role="tabpanel">
